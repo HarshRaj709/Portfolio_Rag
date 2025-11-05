@@ -9,6 +9,7 @@ from .models import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from django.db import connection
 from datetime import datetime
+from .constant import SIMILARITY_SEARCH_QUERY
 
 
 class SupabaseRAG:
@@ -52,15 +53,7 @@ class SupabaseRAG:
         # 2. Raw SQL similarity search (top 4)
         try:
             with connection.cursor() as cursor:
-                cursor.execute(
-                    """
-                    SELECT content
-                    FROM portfolio_rag_bot_document
-                    ORDER BY embedding <=> %s::vector
-                    LIMIT 4;
-                    """,
-                    [q_vec],
-                )
+                cursor.execute(SIMILARITY_SEARCH_QUERY, [q_vec])
                 rows = cursor.fetchall()  # It returns the content stored in vector db which are closest to the question.
         except Exception as e:
             raise RuntimeError(f"Database similarity search failed: {e}")

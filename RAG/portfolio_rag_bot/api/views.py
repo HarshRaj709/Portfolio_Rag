@@ -74,3 +74,6 @@ class ChatStreamView(APIView):
         response["X-Accel-Buffering"] = "no"  # disable buffering in nginx/gunicorn
         response["Connection"] = "keep-alive"
         return response
+
+
+#daphne RAG.asgi:application
