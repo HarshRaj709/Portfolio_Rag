@@ -1,0 +1,23 @@
+*.sqlite3
+db.sqlite3
+*.db
+media/
+staticfiles/
+static/
+logs/
+*.log
+
+# Virtual environments
+venv/
+env/
+rag/
+.rag_env/
+.env
+.env.*
+!example.env
+
+# Migrations (optional: keep if you track migrations)
+**/migrations/__pycache__/
+# Uncomment next line if you DON'T want to track migration files
+# **/migrations/*.py
+
