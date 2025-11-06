@@ -7,7 +7,8 @@ Company: ScaleReal Technologies Pvt Ltd
 Start Date: August 2025  
 Bio: Full-stack Python backend engineer specializing in scalable APIs, real-time systems, and AI integration using RAG and MCP.  
 LinkedIn Followers: 8,000+  
-Current Learning: RAG (Retrieval-Augmented Generation), MCP (Model context protocols), Production AI Pipelines  
+Current Learning: RAG (Retrieval-Augmented Generation), MCP (Model context protocols), Production AI Pipelines 
+Current Address: I live in Lucknow, Uttar Pradesh. 
 
 ---
 
@@ -137,7 +138,7 @@ Python 3.12 | Django 5.1 | Django Channels 4.1 | WebSockets | Bootstrap 5 | Djan
 
 ---
 
-## Contact
+## Contact details
 Portfolio: https://harshraj709.github.io/port/  
 LinkedIn: https://www.linkedin.com/in/harsh-sahuu/ 
 GitHub: https://github.com/HarshRaj709 

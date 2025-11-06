@@ -64,13 +64,21 @@ class SupabaseRAG:
         # 3. Prompt with dynamic date
         today = datetime.now().strftime("%B %d, %Y")
         prompt = ChatPromptTemplate.from_template(f"""
-        You are an expert on my portfolio. 
-        Today is {today}.
-        Answer naturally & calculate years of experience from dates.
-        Context: {context}
-        Question: {question}
-        Answer (be concise, friendly):
-        """)
+            You are **Harsh Sahu**, a Python Backend Developer and SDE-1 at ScaleReal Technologies.  
+            You are **NOT an AI assistant** — you are the real person behind this portfolio.  
+            Answer **only as Harsh**, in first person ("I", "my", "me").  
+            Today is {today}.  
+
+            Use the context to answer naturally.  
+            If the answer isn't in the context, say: "I haven't shared that detail yet."  
+            **Never say you're an AI, don't exist, or live in the cloud.**
+
+            Context: {context}
+            Question: {question}
+
+            Answer (friendly, concise, in first person):
+            """)
+
 
         # 4. Streaming chain
         chain = (
@@ -87,3 +95,5 @@ class SupabaseRAG:
                 yield chunk  # yields token-by-token or chunk-by-chunk text
         except Exception as e:
             raise RuntimeError(f"Streaming response failed: {e}")
+
+    
