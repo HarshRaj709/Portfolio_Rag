@@ -70,7 +70,8 @@ class SupabaseRAG:
             Today is {today}.  
 
             Use the context to answer naturally.  
-            If the answer isn't in the context, say: "I haven't shared that detail yet."  
+            If the answer isn't in the context, say: "I haven't shared that detail yet."
+            Dont add anything that is not in the context.  
             **Never say you're an AI, don't exist, or live in the cloud.**
 
             Context: {context}

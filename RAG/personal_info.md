@@ -1,6 +1,11 @@
-# Harsh Sahu – SDE-1 @ ScaleReal Technologies (November 05, 2025)
+# Document Metadata
+Type: Personal Developer Profile  
+Author: Harsh Sahu  
+Last Updated: November 2025  
+Context: Developer portfolio for AI-powered RAG applications (career Q&A, experience summaries, and skill lookups).
 
-## Personal Summary
+
+# Personal Summary
 Name: Harsh Sahu  
 Current Role: Software Development Engineer 1 (SDE-1)  
 Company: ScaleReal Technologies Pvt Ltd  
@@ -60,52 +65,102 @@ June 2024 – July 2024 | 2 months
 
 ## Projects (Live & Production-Ready)
 
-### DevNest – AI-Powered Developer Community Hub  
-## Overview
-Real-time developer community platform with AI chat, code sharing, and video calls. Built for collaboration and scalable tech discussions.
-Live Link: https://discord-live.onrender.com/  
-Built: October 2025  
-Tech Stack:  
-Python 3.12 | Django 5.1 | Django REST Framework 3.15 | Django Channels 4.1 | Redis 7.2 | CKEditor 5 | Bootstrap 5 | Google OAuth 
+### DevNest – AI-Powered Developer Community Hub
 
-| Feature | Implementation | Impact |
-|--------|----------------|--------|
-| Real-Time Chat | Django Channels + Redis pub/sub 
-| Rich-Text Code Sharing | CKEditor 5 with syntax highlighting
-| Secure Authentication | Google + GitHub OAuth | Zero password friction |
-| Personal Bio Section | Dynamic content from career changelog | Engaging "Meet the Developer" page |
-| Video call feature using Zegocloud SDK |
-Deployment: Render.com 
+    Tagline: Where Developers Nest and Grow
+    Duration: February 2024 – April 2024
+    Purpose:
+    DevNest provides a collaborative platform where developers can connect, share ideas, and grow together. It allows users to find or create topic-specific rooms — for example, a “Django” or “DRF” room — to discuss frameworks, solve problems, and exchange insights in real time. Users can chat, share screens, or even start video calls within their rooms, making it a true community-driven developer hub.
 
----
+Core Features:
 
-### Zombiee Fashion – Full E-Commerce Platform  
-Live Link: https://ecommerce-django-6-g57v.onrender.com/ 
-Built: September 2025  
-Tech Stack:  
-Python 3.12 | Django 5.1 | Django REST Framework | Django Channels | Redis | PostgreSQL (JSONB) | Bootstrap 5 | Google OAuth | Postman | Docker  
+    Login/Signup via Google or GitHub OAuth
+    Create and join topic-based rooms
+    Send and receive real-time messages (no page refresh)
+    Search rooms by creator name, room name, topic, or description
+    View other users’ profiles (requires login)
+    Edit or delete owned rooms
+    Delete recent activities (created rooms, sent messages) via the “Recent Activity” tab
+    Screen sharing and video calls using Zegocloud SDK
 
-| Feature | Implementation | Impact |
-|--------|----------------|--------|
-| Real-Time Support | Django Channels + Redis | Instant customer help |
-| Advanced Filtering | Order Tracking | DRF + email notifications | Secure Auth | Google OAuth + JWT | compliant |
-| Responsive UI | Bootstrap 5 grid | Real-Time Customer Support: Chat live with customer executives through our integrated real-time chat feature, powered by Django Channels | Executive Dashboard: Customer executives have a dedicated interface to manage user queries, ensuring efficient and personalized support.
- 
-Deployment: Render.com 
+Impact:
+    Enabled developers worldwide to collaborate in real-time, share knowledge, and network without external tools — fostering an active, AI-integrated developer community.
+
+Skills & Tech Stack:
+    Python · Django · Django REST Framework · Django Channels · Redis · SQLite · Bootstrap 5 · HTML5 · CSS3 · JavaScript · GitHub · WebSockets · Real-time Systems · Responsive Web Design · Project Management · Problem Solving · Database Management Systems
+
+Live Link: https://discord-live.onrender.com/
+
+Built: October 2025
+Deployment: Render.com
+
+This project demonstrates Harsh’s expertise in Django Channels, Redis pub/sub, and real-time WebSocket communication.
 
 ---
 
-### ChatGram – Real-Time Messaging App   
-Built: August 2025  
-Tech Stack:  
-Python 3.12 | Django 5.1 | Django Channels 4.1 | WebSockets | Bootstrap 5 | Django Auth  
+### Zombiee Fashion – Full E-Commerce Platform
 
-| Feature | Implementation | Impact |
-|--------|----------------|--------|
-| Live Messaging | Channels consumer + broadcast |
-| 1:1 Chats | Room-based routing |
-| Secure Sessions | Django auth + WS tokens | No unauthorized access |
-| Responsive UI | Bootstrap chat bubbles |
+Built: September 2025
+Purpose:
+    Zombiee Fashion is a modern, full-featured e-commerce platform designed to deliver a seamless, real-time shopping experience. It empowers users to browse, filter, and purchase products effortlessly while providing dedicated dashboards for both users and customer executives. The platform includes a real-time customer support system built using Django Channels, ensuring instant interaction and order assistance.
+
+Core Features:
+
+    Google OAuth Authentication: Simple, one-click login/signup via Google accounts.
+
+    Secure Password Recovery: Password reset through secure email links, powered by Django’s built-in authentication system.
+
+    Diverse Product Catalog: Organized product listings including clothes, shoes, and accessories across intuitive categories.
+
+    Advanced Product Filtering: Category-based filters to help users find desired products quickly.
+
+    Detailed Product Pages: Each product page displays related items from the same category to support easy comparison and decision-making.
+
+    Real-Time Customer Support: Live chat system powered by Django Channels and Redis for direct communication between users and support executives.
+
+    Executive Dashboard: A dedicated dashboard for customer executives to track user orders, manage queries, and respond instantly.
+
+    Responsive UI: Adaptive, mobile-first design for consistent shopping across all devices.
+
+    Product Search: Search products by Category, Description, Sub-category, or Product Name.
+
+    Public APIs: Provides RESTful endpoints for product, user, and order management.
+
+Impact:
+    Enhanced customer satisfaction through instant query resolution and real-time order tracking. The executive dashboard streamlined backend operations and improved response time for support executives.
+
+Skills & Tech Stack:
+    Python 3.12 · Django 5.1 · Django REST Framework · Django Channels · Redis · PostgreSQL (JSONB) · Bootstrap 5 · Google OAuth · Docker · SQLite · HTML5 · CSS3 · JavaScript · Responsive Web Design · WebSocket Communication
+
+Live Link: https://ecommerce-django-6-g57v.onrender.com/
+Deployment: Render.com
+
+---
+
+### ChatGram – Real-Time Messaging App
+
+Built: August 2025
+
+Purpose:
+    ChatGram is a real-time chat application that enables users to communicate instantly through one-to-one private messaging. It focuses on secure, fast, and responsive communication using Django Channels and WebSockets. Designed with an intuitive interface and robust authentication, it ensures smooth real-time message exchange without page reloads.
+
+Core Features:
+
+    Real-Time Messaging: Powered by Django Channels and Redis, messages are delivered instantly with broadcast updates.
+
+    Private 1:1 Chats: Room-based routing system allows users to have secure, dedicated conversations.
+
+    Authentication & Security: Uses Django’s authentication system with WebSocket tokens to prevent unauthorized access.
+
+    Responsive Chat UI: Built with Bootstrap 5 chat components for clean, device-friendly layouts.
+
+    Scalable Architecture: ASGI-based backend allows efficient handling of multiple simultaneous connections.
+
+Impact:
+    Delivered a seamless, real-time chat experience similar to modern messaging apps, improving responsiveness and user engagement through efficient WebSocket communication and secure session management.
+
+Skills & Tech Stack:
+    Python 3.12 · Django 5.1 · Django Channels 4.1 · WebSockets · Redis · Bootstrap 5 · Django Auth · HTML5 · CSS3 · JavaScript · Real-time Systems · ASGI Architecture · Secure Authentication
 
 ---
 
@@ -133,15 +188,40 @@ Python 3.12 | Django 5.1 | Django Channels 4.1 | WebSockets | Bootstrap 5 | Djan
 | CGPA? | 7.95 / 10.0 |
 | Total experience? | 4+ months |
 | Learning now? | RAG, MCP, Production AI |
-| Best project? | DevNest – AI + real-time |
+| Best project? | DevNest |
 | Live links? | DevNest: https://discord-live.onrender.com/<br>Zombiee: https://ecommerce-django-6-g57v.onrender.com/ |
 
 ---
 
 ## Contact details
-Portfolio: https://harshraj709.github.io/port/  
-LinkedIn: https://www.linkedin.com/in/harsh-sahuu/ 
-GitHub: https://github.com/HarshRaj709 
-Email: harshsahu709@gmail.com 
+You can connect with me through - 
+    Portfolio: https://harshraj709.github.io/port/  
+    LinkedIn: https://www.linkedin.com/in/harsh-sahuu/ 
+    GitHub: https://github.com/HarshRaj709 
+    Email: harshsahu709@gmail.com 
 
-© 2025 Harsh Sahu – SDE-1 | AI Builder | Django Expert
+
+## Knowledge Areas:
+- Backend Engineering (Django, DRF, REST APIs)
+- Realtime Systems (Channels, WebSockets, Redis)
+- AI Integrations (RAG, MCP, LangChain)
+- Cloud Deployments (Render, Railway, Docker)
+- System Design (Scalability, Caching, Auth)
+
+
+## Certifications & Achievements:
+- IBM Cloud & AI Foundation Internship (Edunet Foundation)
+- Completed Advanced Django REST API course on Udemy
+
+## Developer Statement:
+I believe in building clean, scalable systems that merge AI with backend engineering.  
+My approach emphasizes clarity, automation, and developer empathy — code should teach as much as it runs.
+
+
+## Future Learning Goals (2026):
+- Fine-tuning RAG pipelines for domain-specific knowledge retrieval
+- Exploring Model Context Protocol (MCP) in production
+- Improving async and real-time backend scalability
+
+## Tags:
+Python, Django, REST API, WebSockets, Channels, RAG, MCP, Redis, PostgreSQL, Docker, Cloud, AI, Real-time Systems, LangChain, Full-stack Developer, Backend Engineer, ScaleReal Technologies
