@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(1&hw=roc=5%!w)36zpj1!!i&82p*q1ofs28ob!_v0z0cvbnbd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*","0.0.0.0"]
 
 # Supabase
 SUPABASE_URL = os.getenv('SUPABASE_URL')
